@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Avaleigh';
+  src: url('/fonts/Avaleigh-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avaleigh';
+  src: url('/fonts/Avaleigh-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avaleigh';
+  src: url('/fonts/Avaleigh-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}

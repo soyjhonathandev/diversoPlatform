@@ -1,0 +1,85 @@
+{
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "contact": "Contact",
+    "aboutUs": "About Us",
+    "languages": {
+      "es": "Spanish",
+      "en": "English"
+    },
+    "login": "Login",
+    "register": "Register"
+  },
+  "homePage": {
+    "headline": "Branding, Strategies, and Audiovisual",
+    "callToAction": {
+      "moreInfo": "Request a quote!"
+    },
+    "sponsors": {
+      "description": "You will find us at:"
+    },
+    "videoSection": {
+      "title": "Informative video about our mission and vision",
+      "paragraph": "At Vela Power, we are dedicated to delivering innovative energy solutions that make a significant impact. With extensive experience in the industry, we have established ourselves as leading manufacturers and distributors of solar lamps, AGM motorcycle batteries, and industrial batteries. Our commitment to quality and excellence is reflected in the various certificates we have earned, endorsing the reliability and superiority of our products. Watch our informative video to learn more about our mission, vision, and the values that drive us forward."
+    },
+    "informativeSection": {
+      "title": "Write to us for more information",
+      "cards": {
+        "ecological": {
+          "title": "SERVICE",
+          "description": "Our products provide an environmentally friendly option for those seeking to power their lives responsibly. At Vela Power, we believe a brighter future is possible when we combine technological innovation with environmental commitment."
+        },
+        "economic": {
+          "title": "SERVICE",
+          "description": "Invest in our products for a brighter and more economical future, eliminating overwhelming bills and gaining lasting and meaningful returns."
+        },
+        "social": {
+          "title": "SERVICE",
+          "description": "We lead the transition towards a sustainable future in Venezuela, contributing to illuminated and equitable communities through solar products and promoting the use of renewable energies."
+        }
+      }
+    },
+    "certificationSection": {
+      "title": "Quality Control",
+      "description": "Our chinese provider approval the certificates of  ISO9001, CE, ROHS, and UL. And they also have ISO/TS16949, ISO9001, ISO14001, OHSAS18001, SNI, and PNS certificates in their Indonesia factory."
+    }
+  },
+
+  "contactPage": {
+    "headline": "Ready to empower your projects with",
+    "headlineHighlight": "Vela Power?",
+    "subHeadline": "GET IN TOUCH",
+    "description": "We would love to hear from you! Get in touch with our team today for more information about our products and services.",
+    "descriptionP2": "We are here to offer you reliable and superior quality energy solutions.",
+    "callToAction": {
+      "sendEmail": "Send Email",
+      "ctaButton": "Contact by WhatsApp"
+    }
+  },
+  "aboutUs": {
+    "title": "SOLAR ENERGY FOR EVERYONE",
+    "sections": {
+      "firstDescription": {
+        "title": "About us:",
+        "paragraph1": "At **Vela Power**, we take pride in offering innovative energy solutions that make a difference. With years of experience in the industry, we are leading manufacturers and distributors of solar lamps, AGM motorcycle batteries, and industrial batteries",
+        "paragraph2": "Our commitment to quality and excellence has earned us various certificates that endorse the reliability of our products"
+      },
+      "secondDescription": {
+        "title": "Products:",
+        "paragraph1": "Discover our range of premium quality products at Vela Power. From solar lamps that light up your nights to AGM motorcycle batteries that power your adventures, we offer energy solutions for every need. Our products meet the highest quality standards and are backed by certificates ensuring their reliability.",
+        "paragraph2": "At Vela Power, quality is our number one priority. Our products are backed by a series of certifications ensuring their quality and reliability. From quality certificates to safety certifications, you can trust that our products meet the highest industry standards"
+      },
+      "thirdDescription": {
+        "title": "Why Choose VelaPower?",
+        "list1": "**Experience:** We have over 10 years of experience in the solar energy industry.",
+        "list2": "**Professionalism:** Our team is made up of highly qualified professionals committed to customer satisfaction.",
+        "list3": "**Quality:** We offer the highest quality products from the best manufacturers in the market.",
+        "list4": "**Comprehensive service:** We offer our clients a comprehensive service, from initial advice to the installation and maintenance of solar panels.",
+        "list5": "**Commitment to the environment:** We believe in solar energy as a clean, sustainable and affordable alternative for generating energy.",
+        "paragraph1": "If you are thinking about installing solar panels in your home or business, do not hesitate to contact us. At VelaPower we will advise you without obligation and offer you the best solution for your needs.",
+        "paragraph2": "**Together we can build a more sustainable future!**"
+      }
+    }
+  }
+}

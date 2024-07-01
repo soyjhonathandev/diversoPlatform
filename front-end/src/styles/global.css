@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('./fonts.css');
+
+@layer base {
+  :root {
+    --background: #000000;
+    --foreground: 240 10% 3.9%;
+    --card: 85 56% 87% / 1;
+    --card-foreground: 85 56% 87% / 1;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: #000000;
+    --primary-foreground: #000000;
+    --secondary: 222 47% 11%;
+    --secondary-foreground: 0 0% 97%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 142.1 76.2% 36.3%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: #000000;
+    --foreground: 0 0% 95%;
+    --card: 85 56% 87% / 1;
+    --card-foreground: 85 56% 87% / 1;
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 142.1 70.6% 45.3%;
+    --primary-foreground: 144.9 80.4% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 142.4 71.8% 29.2%;
+  }
+}
+
+.ProseMirror {
+  padding: 10px;
+  background: transparent;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ProseMirror > * + * {
+  margin-top: 0.75em;
+}
+
+.ProseMirror ul {
+  padding: 0 1rem;
+  list-style: disc !important;
+}
+.ProseMirror ol {
+  padding: 0 2rem;
+  list-style: decimal !important;
+}
+
+.ProseMirror h1,
+.ProseMirror h2,
+.ProseMirror h3,
+.ProseMirror h4,
+.ProseMirror h5,
+.ProseMirror h6 {
+  line-height: 1.1;
+}
+
+.ProseMirror h2 {
+  font-size: 20px;
+}
+
+.ProseMirror code {
+  background-color: rgba(#616161, 0.1);
+  color: #616161;
+}
+
+.ProseMirror pre {
+  background: #0d0d0d;
+  color: #fff;
+  font-family: 'JetBrainsMono', monospace;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+}
+.ProseMirror code {
+  color: inherit;
+  padding: 0;
+  background: none;
+  font-size: 0.8rem;
+}
+
+.ProseMirror blockquote {
+  padding-left: 1rem;
+  border-left: 3px solid #999999;
+}
+
+.ProseMirror hr {
+  border: none;
+  border-top: 3px solid #999999;
+  margin: 2rem 0;
+}
+
+.ArticleSection {
+  /* padding: 10px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  color: #1e293b;
+}
+
+.ArticleSection > * + * {
+  margin-top: 0.75em;
+}
+
+.ArticleSection ul {
+  padding: 0 1rem;
+  list-style: disc !important;
+}
+.ArticleSection ol {
+  padding: 0 2rem;
+  list-style: decimal !important;
+}
+
+.ArticleSection h1,
+.ArticleSection h2,
+.ArticleSection h3,
+.ArticleSection h4,
+.ArticleSection h5,
+.ArticleSection h6 {
+  line-height: 1.1;
+}
+
+.ArticleSection h2 {
+  font-size: 30px;
+}
+
+.ArticleSection code {
+  background-color: rgba(#616161, 0.1);
+  color: #616161;
+}
+
+.ArticleSection pre {
+  background: #0d0d0d;
+  color: #fff;
+  font-family: 'JetBrainsMono', monospace;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+}
+.ArticleSection code {
+  color: inherit;
+  padding: 0;
+  background: none;
+  font-size: 0.8rem;
+}
+
+.ArticleSection blockquote {
+  padding-left: 1rem;
+  border-left: 3px solid #999999;
+}
+
+.ArticleSection hr {
+  border: none;
+  border-top: 3px solid #999999;
+  margin: 2rem 0;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

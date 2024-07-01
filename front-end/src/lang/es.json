@@ -1,0 +1,77 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "aboutUs": "Sobre nosotros",
+    "languages": {
+      "es": "Español",
+      "en": "Ingles"
+    },
+    "login": "Iniciar",
+    "register": "Registrar"
+  },
+  "homePage": {
+    "headline": "Branding, Estrategias y audiovisual ",
+   "callToAction": {
+      "moreInfo": "Solicitar una cotización"
+    },
+    "informativeSection": {
+      "title": "Escríbenos para más información",
+      "cards": {
+        "ecological": {
+          "title": "Servicio",
+          "description": "Nuestros productos ofrecen una alternativa ecológica para aquellos comprometidos con la energía responsable. En Vela Power, creemos en un futuro más brillante mediante la combinación de innovación tecnológica y compromiso ambiental."
+        },
+        "economic": {
+          "title": "Servicio",
+          "description": "Invierte en nuestros productos para un futuro más brillante y económico, eliminando facturas abrumadoras y obteniendo retornos duraderos y significativos."
+        },
+        "social": {
+          "title": "Servicio",
+          "description": " Lideramos la transición hacia un futuro sostenible en Venezuela, contribuyendo a comunidades iluminadas y equitativas mediante productos solares y promoviendo el uso de energías renovables."
+        }
+      }
+    },
+    "certificationSection": {
+      "title": "Control de Calidad",
+      "description": "Nuestro proveedor chino ha aprobado los certificados de ISO9001, CE, ROHS y UL. Además, tienen los certificados de ISO/TS16949, ISO9001, ISO14001, OHSAS18001, SNI y PNS en su fábrica en Indonesia."
+    }
+  },
+  
+  "contactPage": {
+    "headline": "Ponte en contacto",
+    "subHeadline": "PONTE EN CONTACTO CON NOSOTROS",
+    "description": " ¡Nos encantaría escucharte! Ponte en contacto con nuestro equipo hoy mismo para obtener más información sobre nuestros productos y servicios.",
+    "descriptionP2": " Estamos aquí para ofrecerte soluciones energéticas confiables y de calidad superior.",
+    "callToAction": {
+      "sendEmail": "Enviar Email",
+      "ctaButton": "Contactar por WhatsApp"
+    }
+  },
+  "aboutUs": {
+    "title": "ENERGÍA SOLAR PARA TODOS",
+    "sections": {
+      "firstDescription": {
+        "title": "Sobre Nosotros:",
+        "paragraph1": "En **Vela Power**, nos enorgullece ofrecer soluciones energéticas innovadoras que hacen una diferencia. Con años de experiencia en la industria, somos fabricantes y distribuidores líderes en lámparas solares, baterías de moto AGM y baterías industriales.",
+        "paragraph2": " Nuestro compromiso con la calidad y la excelencia nos ha valido diversos certificados que respaldan la confiabilidad de nuestros productos."
+      },
+      "secondDescription": {
+        "title": "Productos:",
+        "paragraph1": "Descubre nuestra gama de productos de calidad premium en Vela Power. Desde lámparas solares que iluminan tus noches hasta baterías de moto AGM que potencian tus aventuras, ofrecemos soluciones energéticas para cada necesidad. Nuestros productos cuentan con los más altos estándares de calidad y están respaldados por certificados que garantizan su fiabilidad.",
+        "paragraph2": "En Vela Power, la calidad es nuestra prioridad número uno. Nuestros productos están respaldados por una serie de certificaciones que garantizan su calidad y confiabilidad. Desde certificados de calidad hasta certificaciones de seguridad, puedes confiar en que nuestros productos cumplen con los más altos estándares de la industria."
+      },
+      "thirdDescription": {
+        "title": "¿Por qué elegir VelaPower?",
+        "list1": "**Experiencia:** Contamos con más de 10 años de experiencia en el sector de la energía solar.",
+        "list2": "**Profesionalidad:** Nuestro equipo está formado por profesionales altamente cualificados y comprometidos con la satisfacción de nuestros clientes.",
+        "list3": "**Calidad:** Ofrecemos productos de la más alta calidad de los mejores fabricantes del mercado.",
+        "list4": "**Servicio integral:** Ofrecemos a nuestros clientes un servicio integral, desde el asesoramiento inicial hasta la instalación y el mantenimiento de los paneles solares.",
+        "list5": "**Compromiso con el medio ambiente:** Creemos en la energía solar como una alternativa limpia, sostenible y económica para generar energía.",
+        "paragraph1": "Si estás pensando en instalar paneles solares en tu hogar o empresa, no dudes en contactarnos. En VelaPower te asesoraremos sin compromiso y te ofreceremos la mejor solución para tus necesidades.",
+        "paragraph2": "**¡Juntos podemos construir un futuro más sostenible!**"
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "extends": [
+      "plugin:react/recommended",
+      "airbnb",
+      "plugin:jsx-a11y/recommended",
+      "plugin:react-hooks/recommended",
+      "plugin:prettier/recommended",
+      "next/core-web-vitals"
+    ],
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [".js", ".jsx", ".ts", ".tsx"],
+          "moduleDirectory": ["node_modules", "src/"]
+        }
+      }
+    },
+    "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+  "ecmaVersion": 2021,
+  "sourceType": "module",
+  "ecmaFeatures": {
+    "jsx": true
+  }
+},
+    "plugins": ["react", "react-hooks", "import", "prettier", "tailwindcss", "@typescript-eslint/eslint-plugin"],
+    "rules": {
+      "import/no-unresolved": [2, { "caseSensitive": false }],
+      "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "react/jsx-uses-react": "off",
+      "react/react-in-jsx-scope": "off",
+      "react/prop-types": "off",
+      "arrow-body-style": ["error", "as-needed"],
+      "prettier/prettier": "warn",
+      "import/prefer-default-export": "off",
+      "object-curly-newline": 0,
+      "object-curly-spacing": [2, "always"],
+      "no-new-object": 2,
+      "no-sparse-arrays": 2,
+      "array-bracket-spacing": 2,
+      "no-array-constructor": 2,
+      "react/jsx-props-no-spreading": 0,
+      "no-nested-ternary": "off",
+      "tailwindcss/classnames-order": "warn",
+      "tailwindcss/no-custom-classname": "warn",
+      "tailwindcss/no-contradicting-classname": "error",
+      "jsx-a11y/anchor-is-valid": [
+        "error",
+        {
+          "specialLink": ["hrefLeft", "hrefRight"],
+          "aspects": ["invalidHref", "preferButton"]
+        }
+      ]
+    }
+  }
