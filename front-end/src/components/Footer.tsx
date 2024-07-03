@@ -9,8 +9,8 @@ export const Footer: React.FC = () => {
 
   return (
     <footer className="flex w-full md:justify-between flex-col items-center bg-black md:px-44 p-5 md:p-12">
-      <div className="flex w-full flex-col lg:flex-row pt-10 lg:pt-0 h-full md:justify-between md:items-center xl:pr-52 bg-transparent">
-        <div className="flex flex-col justify-center items-center">
+      <div className="flex w-full flex-col lg:flex-row pt-10 lg:pt-0 h-full md:justify-between md:items-center xl:pr-52 ">
+        <div className="flex flex-col">
           <Link href="/">
             <Image
               src={Logo}
@@ -18,61 +18,22 @@ export const Footer: React.FC = () => {
               height={200}
               width={200}
             />
-            <span className="text-white font-medium mt-10" >Una marca creada <br/> para impulsar la tuya</span>
+            
           </Link>
-         
+          <span className="font-medium font-secondaryFont text-lg text-white mt-3 text-start" >Una marca creada <br /> para impulsar la tuya</span>
         </div>
-        <div className="max-w-lg space-y-2 pt-6 lg:pt-0 px-6">
-          <h3 className="text-white font-bold">FLORIDA, US</h3>
-          <p className="text-white">
+        <div className="max-w-lg flex flex-col gap-3 pt-6 lg:pt-0 md:px-6">
+          <div>
+          <h3 className='font-bold font-baseFont text-2xl text-white'>FLORIDA, US</h3>
+          <p className='font-light font-secondaryFont text-lg text-white'>
             4415 NW 50TH DR 102
             GAINESVILLE, FL 32606
-          </p>
-          <p className="text-white font-bold">CONTACTO</p>
-          {router.locale === 'es' && (
-          <div className="flex items-center gap-5">
-         
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 180 120"
-              width="30"
-              height="40"
-            >
-              <defs>
-                <g id="d" transform="translate(0 -36)">
-                  <g id="c">
-                    <g id="b">
-                      <path
-                        d="M0-5L-1.545-.245l2.853.927z"
-                        fill="#fff"
-                        id="a"
-                      />
-                      <use href="#a" transform="scale(-1 1)" />
-                    </g>
-                    <use href="#b" transform="rotate(72)" />
-                  </g>
-                  <use href="#b" transform="rotate(-72)" />
-                  <use href="#c" transform="rotate(144)" />
-                </g>
-              </defs>
-              <path d="M0 0h180v120H0z" fill="#cf142b" />
-              <path d="M0 0h180v80H0z" fill="#00247d" />
-              <path d="M0 0h180v40H0z" fill="#fc0" />
-              <g transform="translate(90 84)">
-                <g id="f">
-                  <g id="e">
-                    <use href="#d" transform="rotate(10)" />
-                    <use href="#d" transform="rotate(30)" />
-                  </g>
-                  <use href="#e" transform="rotate(40)" />
-                </g>
-                <use href="#f" transform="rotate(-80)" />
-              </g>
-            </svg>
-            <p className="text-slate-50">+58 ------</p>
+            </p>
           </div>
-          )}
-          {router.locale === 'en' && (
+          <div>
+          <h3 className='font-bold font-baseFont text-2xl text-white'>CONTACTO</h3>
+        
+          
           <div className="flex items-center gap-5">
             {' '}
             <svg
@@ -112,30 +73,16 @@ export const Footer: React.FC = () => {
                 <use x="2470" href="#e" />
               </g>
             </svg>
-            <p className="text-slate-50">+1 (---) =======</p>
+            <p className="text-slate-50">+1 (347) 646 7471</p>
             </div>
-          )}
+
         </div>
-        
-        <div className="flex flex-col gap-6 pt-6 lg:gap-4 lg:pt-0">
-          <Link className="uppercase text-white font-bold" href="/">
-            Home
-          </Link>
-          <Link className="uppercase text-white font-bold" href="/about-us">
-            Services
-          </Link>
-          <Link className="uppercase text-white font-bold" href="/contact">
-            contact
-          </Link>
-          <Link className="uppercase text-white font-bold" href="/about-us">
-            About us
-          </Link>
-          
         </div>
-        <div className="flex justify-center flex-col items-center gap-4 ">
-          <h3 className="text-white font-bold">SIGUENOS</h3>
+
+        <div className="flex justify-center flex-col md:items-center items-start gap-4 md:mt-0  mt-5 ">
+          <h3 className="font-bold font-baseFont text-2xl text-white">SIGUENOS</h3>
           <ul className="h-10 flex justify-center gap-6 text-white items-center pt-6 pb-5 ">
-            <li>
+            {/* <li>
               <a
                 href=""
                 target="_blank"
@@ -155,10 +102,10 @@ export const Footer: React.FC = () => {
                   ></path>
                 </svg>
               </a>
-            </li>
+            </li> */}
             <li>
               <a
-                href=''
+                href='Instagram.com/diversogroup_'
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -179,7 +126,7 @@ export const Footer: React.FC = () => {
           </ul>
         </div>
       </div>
-      <p className="text-center mt-20 lg:pt-0 text-slate-50">
+      <p className="font-light font-secondaryFont text-lg  text-slate-50  mt-16 text-center">
         Todos los derechos reservado DiversogroupⒸ 2024
       </p>
     </footer>

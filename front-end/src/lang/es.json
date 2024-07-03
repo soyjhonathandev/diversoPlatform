@@ -3,75 +3,85 @@
     "home": "Inicio",
     "services": "Servicios",
     "contact": "Contacto",
-    "aboutUs": "Sobre nosotros",
     "languages": {
       "es": "Español",
       "en": "Ingles"
-    },
-    "login": "Iniciar",
-    "register": "Registrar"
+    }
   },
   "homePage": {
     "headline": "Branding, Estrategias y audiovisual ",
-   "callToAction": {
-      "moreInfo": "Solicitar una cotización"
-    },
-    "informativeSection": {
-      "title": "Escríbenos para más información",
+    "callToAction": "¡Solicitar cotización!",
+    "services": {
       "cards": {
-        "ecological": {
-          "title": "Servicio",
-          "description": "Nuestros productos ofrecen una alternativa ecológica para aquellos comprometidos con la energía responsable. En Vela Power, creemos en un futuro más brillante mediante la combinación de innovación tecnológica y compromiso ambiental."
+        "card1": {
+          "title": "Branding",
+          "description": "En Diverso Group, no solo diseñamos un logo atractivo, creamos una marca integral que inspira y conecta con tu audiencia de forma atemporal.",
+           "callToAction": "Quiero saber más"
         },
-        "economic": {
-          "title": "Servicio",
-          "description": "Invierte en nuestros productos para un futuro más brillante y económico, eliminando facturas abrumadoras y obteniendo retornos duraderos y significativos."
+        "card2": {
+          "title": "Diseño gráfico",
+          "description": "Si lo que buscas son diseños para tu instagram, stickers o packaging... Este es el servicio que necesitas.",
+           "callToAction": "Costo de planes"
         },
-        "social": {
-          "title": "Servicio",
-          "description": " Lideramos la transición hacia un futuro sostenible en Venezuela, contribuyendo a comunidades iluminadas y equitativas mediante productos solares y promoviendo el uso de energías renovables."
+        "card3": {
+          "title": "Gestión de redes",
+          "description": "Nos encargamos de todo, desde la creación de contenido atractivo hasta la interacción con tus seguidores, asegurando que cada publicación refleje la esencia de tu marca.",
+           "callToAction": "¡Me interesa!"
         }
       }
     },
-    "certificationSection": {
-      "title": "Control de Calidad",
-      "description": "Nuestro proveedor chino ha aprobado los certificados de ISO9001, CE, ROHS y UL. Además, tienen los certificados de ISO/TS16949, ISO9001, ISO14001, OHSAS18001, SNI y PNS en su fábrica en Indonesia."
-    }
-  },
-  
-  "contactPage": {
-    "headline": "Ponte en contacto",
-    "subHeadline": "PONTE EN CONTACTO CON NOSOTROS",
-    "description": " ¡Nos encantaría escucharte! Ponte en contacto con nuestro equipo hoy mismo para obtener más información sobre nuestros productos y servicios.",
-    "descriptionP2": " Estamos aquí para ofrecerte soluciones energéticas confiables y de calidad superior.",
-    "callToAction": {
-      "sendEmail": "Enviar Email",
-      "ctaButton": "Contactar por WhatsApp"
-    }
-  },
-  "aboutUs": {
-    "title": "ENERGÍA SOLAR PARA TODOS",
-    "sections": {
-      "firstDescription": {
-        "title": "Sobre Nosotros:",
-        "paragraph1": "En **Vela Power**, nos enorgullece ofrecer soluciones energéticas innovadoras que hacen una diferencia. Con años de experiencia en la industria, somos fabricantes y distribuidores líderes en lámparas solares, baterías de moto AGM y baterías industriales.",
-        "paragraph2": " Nuestro compromiso con la calidad y la excelencia nos ha valido diversos certificados que respaldan la confiabilidad de nuestros productos."
+    "serviceSections": {
+      "section1": {
+        "title": "Branding",
+        "subTitle": "Incluye todo esto:",
+        "list": {
+          "item1": "Estrategia y concepto",
+          "item2": "Diseños complementarios",
+          "item3": "Manual de identidad con toda la información final de tu marca: logos, plantillas, editables, etc."
+        },
+        "callToAction": "Quiero cotización"
       },
-      "secondDescription": {
-        "title": "Productos:",
-        "paragraph1": "Descubre nuestra gama de productos de calidad premium en Vela Power. Desde lámparas solares que iluminan tus noches hasta baterías de moto AGM que potencian tus aventuras, ofrecemos soluciones energéticas para cada necesidad. Nuestros productos cuentan con los más altos estándares de calidad y están respaldados por certificados que garantizan su fiabilidad.",
-        "paragraph2": "En Vela Power, la calidad es nuestra prioridad número uno. Nuestros productos están respaldados por una serie de certificaciones que garantizan su calidad y confiabilidad. Desde certificados de calidad hasta certificaciones de seguridad, puedes confiar en que nuestros productos cumplen con los más altos estándares de la industria."
+      "section2": {
+        "title": "Diseño gráfico",
+        "subTitle": "Nos adaptamos a tu marca, resaltando su estilo y esencia a través de diseños que llamen la atención.  ",
+        "list": {
+          "item1": "Redes sociales",
+          "item2": "Flyers, vallas publicitarias, etc",
+          "item3": "Stickers",
+          "item4": "Packaging"
+        },
+        "callToAction": "¡Me interesa!"
       },
-      "thirdDescription": {
-        "title": "¿Por qué elegir VelaPower?",
-        "list1": "**Experiencia:** Contamos con más de 10 años de experiencia en el sector de la energía solar.",
-        "list2": "**Profesionalidad:** Nuestro equipo está formado por profesionales altamente cualificados y comprometidos con la satisfacción de nuestros clientes.",
-        "list3": "**Calidad:** Ofrecemos productos de la más alta calidad de los mejores fabricantes del mercado.",
-        "list4": "**Servicio integral:** Ofrecemos a nuestros clientes un servicio integral, desde el asesoramiento inicial hasta la instalación y el mantenimiento de los paneles solares.",
-        "list5": "**Compromiso con el medio ambiente:** Creemos en la energía solar como una alternativa limpia, sostenible y económica para generar energía.",
-        "paragraph1": "Si estás pensando en instalar paneles solares en tu hogar o empresa, no dudes en contactarnos. En VelaPower te asesoraremos sin compromiso y te ofreceremos la mejor solución para tus necesidades.",
-        "paragraph2": "**¡Juntos podemos construir un futuro más sostenible!**"
+      "section3": {
+        "title": "Gestión de redes",
+        "subTitle": "¡Nos encargamos de todo!",
+        "list": {
+          "item1": "Creación de ideas",
+          "item2": "Diseño gráfico",
+          "item3": "Edición de reels con audio en tendencia",
+          "item4": "Copyright para captions que capten la atención",
+          "item5": "Posteos tanto en historias como en el feed"
+        },
+        "callToAction": "Quiero cotización"
       }
+    },
+    "customers": "Marcas con las que hemos trabajado en los distintos servicios que ofrecemos",
+    "contact": {
+      "titleP1": "Escríbenos para más",
+      "titleP2": "información",
+      "callToAction1": "Enviar email",
+      "callToAction2": "Escribir al WhatsApp"
+    }
+  },
+  "footer": {
+    "slogan": "Una marca creada para impulsar la tuya",
+    "socialMedia": "Siguenos",
+    "rights": "Todos los derechos reservado DiversogroupⒸ 2024",
+    "contact": "CONTACTO",
+    "navigation": {
+      "home": "Inicio",
+      "services": "Servicios",
+      "contact": "Contacto"
     }
   }
 }

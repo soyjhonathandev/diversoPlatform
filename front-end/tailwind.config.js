@@ -63,6 +63,7 @@ module.exports = {
       },
       fontFamily: {
         baseFont: ['Avaleigh', 'sans-serif'],
+        secondaryFont: ['Outfit', 'sans-serif'],
       },
       borderRadius: {
         lg: 'var(--radius)',
