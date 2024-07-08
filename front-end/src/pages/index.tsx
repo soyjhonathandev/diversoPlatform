@@ -13,29 +13,30 @@ import Catalogue3 from '@public/img/catalogue3.png';
 import Service1 from '@public/img/service1.png';
 import Service2 from '@public/img/service2.png';
 import Service3 from '@public/img/service3.png';
+
+import customerLogo1 from '@public/img/customer1.png';
+import customerLogo2 from '@public/img/customer2.png';
+import customerLogo3 from '@public/img/customer3.png';
+import customerLogo4 from '@public/img/customer4.png';
+import customerLogo5 from '@public/img/customer5.png';
+import customerLogo6 from '@public/img/customer6.png';
+import customerLogo7 from '@public/img/customer7.png';
+import customerLogo8 from '@public/img/customer8.png';
+import customerLogo9 from '@public/img/customer9.png';
+import customerLogo11 from '@public/img/customer11.png';
+import customerLogo12 from '@public/img/customer12.png';
+import customerLogo13 from '@public/img/customer13.png';
+import customerLogo14 from '@public/img/customer14.png';
+import customerLogo15 from '@public/img/customer15.png';
+import customerLogo16 from '@public/img/customer16.png';
+import customerLogo17 from '@public/img/customer17.png';
+import customerLogo18 from '@public/img/customer18.png';
 //icons
 import { MoveRight } from 'lucide-react';
 
 const HomePage: React.FC = () => {
   const t = useTranslations('homePage');
-  const images = [Logo, Logo, Logo, Logo, Logo];
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const sliderRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, [images.length]);
-
-  useEffect(() => {
-    if (sliderRef.current) {
-      sliderRef.current.style.transition = 'transform 2s ease';
-      sliderRef.current.style.transform = `translateX(-${currentIndex * 2}%)`;
-    }
-  }, [currentIndex]);
+  const images = [customerLogo1, customerLogo2, customerLogo3,  customerLogo5, customerLogo6, customerLogo7, customerLogo8, customerLogo9, customerLogo4, customerLogo11, customerLogo12, customerLogo13, customerLogo14, customerLogo15, customerLogo16, customerLogo17, customerLogo18 ];
 
   return (
     <>
@@ -46,7 +47,7 @@ const HomePage: React.FC = () => {
       </Head>
       <ClientLayout>
         <SectionBlock>
-          <div className="w-full md:px-44  h-full flex justify-center items-center  bg-DesktopBg-img bg-cover bg-center bg-no-repeat md:rounded-b-full">
+          <div id='home' className="w-full md:px-44  h-full flex justify-center items-center  bg-DesktopBg-img bg-cover bg-center bg-no-repeat md:rounded-b-full">
             <section className="flex h-full flex-row items-center justify-between max-w-[1905px]">
               <div className="w-full h-full mx:mt-0 flex justify-center flex-col items-center">
                 <h1 className="md:w-3/5 md:text-9xl text-7xl mb-8 mt-4 font-bold text-center text-white ">
@@ -77,9 +78,13 @@ const HomePage: React.FC = () => {
                 <p className="font-light font-secondaryFont text-lg">
                   {t('services.cards.card1.description')}
                 </p>
+                <a
+                  href="#service1">
+                  
                 <button className="mt-4 px-6 py-2 border-2 border-white rounded-full hover:bg-white hover:text-black transition-colors text-2xl">
                   {t('services.cards.card1.callToAction')}
-                </button>
+                  </button>
+                </a>
               </article>
               {/* Card 2 */}
               <article className="flex flex-col items-center text-center space-y-4  p-4 rounded-lg ">
@@ -94,10 +99,12 @@ const HomePage: React.FC = () => {
                     {t('services.cards.card2.title')}
                   </h3>
                 </div>
-
+                <a
+                  href="#service2">
                 <button className="mt-8 px-6 py-2 border-2 border-white rounded-full hover:bg-white hover:text-black transition-colors text-2xl">
                   {t('services.cards.card2.callToAction')}
-                </button>
+                  </button>
+                </a>
               </article>
               {/* Card 3 */}
               <article className="flex flex-col items-center text-center space-y-4">
@@ -113,9 +120,12 @@ const HomePage: React.FC = () => {
                 <p className="font-light font-secondaryFont text-lg">
                   {t('services.cards.card3.description')}
                 </p>
+                <a
+                  href="#service3">
                 <button className="mt-6 px-6 py-2 border-2 border-white rounded-full hover:bg-white hover:text-black transition-colors text-2xl">
                   {t('services.cards.card3.callToAction')}
-                </button>
+                  </button>
+                </a>
               </article>
             </div>
           </div>
@@ -161,9 +171,13 @@ const HomePage: React.FC = () => {
                 <li className='flex flex-row gap-3'><MoveRight /> {t('serviceSections.section1.list.item2')}</li>
                 <li className='flex flex-row gap-3'><MoveRight /> {t('serviceSections.section1.list.item3')}</li>
               </ul>
+              <a
+                href="mailto:hi@diversocreativeagency.com?Subject=Hola, Estoy interesado en una cotizacion para el servicio de Branding!!"
+              >
               <button className="mt-6 px-6 py-2 border-2 border-black rounded-full hover:bg-black hover:text-white transition-colors text-2xl">
                 {t('serviceSections.section1.callToAction')}
-              </button>
+                </button>
+              </a>
             </article>
           </div>
         </section>
@@ -184,9 +198,13 @@ const HomePage: React.FC = () => {
                 <li className='flex flex-row gap-3'><MoveRight /> {t('serviceSections.section2.list.item3')}</li>
                 <li className='flex flex-row gap-3'><MoveRight /> {t('serviceSections.section2.list.item4')}</li>
               </ul>
+              <a
+                href="mailto:hi@diversocreativeagency.com?Subject=Hola, Estoy interesado en una cotizacion para el servicio de Diseño gráfico!!"
+              >
               <button className="mt-6 px-6 py-2 border-2 border-white rounded-full hover:bg-white hover:text-black transition-colors text-2xl">
                 {t('serviceSections.section2.callToAction')}
-              </button>
+                </button>
+              </a>
             </article>
 
             <div className="xl:w-2/4 w-full md:mt-0 mt-24 flex justify-center flex-col items-center">
@@ -228,9 +246,13 @@ const HomePage: React.FC = () => {
                 <li className='flex flex-row gap-3'> <MoveRight /> {t('serviceSections.section3.list.item3')}</li>
                 <li className='flex flex-row gap-3'> <MoveRight /> {t('serviceSections.section3.list.item4')}</li>
               </ul>
+              <a
+                href="mailto:hi@diversocreativeagency.com?Subject=Hola, Estoy interesado en una cotizacion para el servicio de Gestión de redes!!"
+              >
               <button className="mt-6 px-6 py-2 border-2 border-black rounded-full hover:bg-black hover:text-white transition-colors text-2xl">
                 {t('serviceSections.section3.callToAction')}
-              </button>
+                </button>
+              </a>
             </article>
           </div>
         </section>
@@ -242,15 +264,13 @@ const HomePage: React.FC = () => {
               {t('customers')}
             </h2>
             <div className="relative w-full overflow-hidden">
-              <div className="flex gap-12 animate-marquee">
+              <div className="flex gap-20 animate-marquee">
                 {images.concat(images).map((image, index) => (
                   <Image
                     key={index}
                     src={image}
-                    height={150}
-                    width={150}
                     alt={`Slide ${index}`}
-                    className="w-full h-full object-cover"
+                    className="w-38 h-16"
                   />
                 ))}
               </div>

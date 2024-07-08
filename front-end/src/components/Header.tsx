@@ -103,42 +103,45 @@ export const Header: React.FC = () => {
           >
             <ul className="mb-20 flex flex-col items-left gap-8 fhd:text-6xl text-5xl font-medium text-center text-textGray">
               <li>
-                <button
-                  type="button"
+                <button onClick={toggleModal}>
+                <a
+                  href="#home"
                   className={
                     router.pathname === '/'
                       ? 'text-white'
-                      : 'text-[#666666] hover:text-white'
+                      : 'text-[#666666] hover:text-gray-400'
                   }
-                  onClick={() => router.push('/')}
                 >
                   {t('home')}
+                  </a>
                 </button>
               </li>
               <li>
-                <button
-                  type="button"
+                <button onClick={toggleModal}>
+                <a
+                  href="#services"
                   className={
                     router.pathname === '/'
                       ? 'text-white'
-                      : 'text-[#666666] hover:text-white'
+                      : 'text-[#666666] hover:text-gray-400'
                   }
-                  onClick={() => router.push('/')}
                 >
                   {t('services')}
+                  </a>
                 </button>
               </li>
               <li>
-                <button
-                  type="button"
+                <button onClick={toggleModal}>
+                <a
+                  href="#contact"
                   className={
-                    router.pathname === '/contact'
+                    router.pathname === '/'
                       ? 'text-white'
-                      : 'text-[#666666] hover:text-white'
+                      : 'text-[#666666] hover:text-gray-400'
                   }
-                  onClick={() => router.push('/')}
                 >
                   {t('contact')}
+                  </a>
                 </button>
               </li>
            
@@ -159,44 +162,41 @@ export const Header: React.FC = () => {
 
       <ul className="flex w-2/4 xl:w-6/12 flex-row xl:text-3xl  items-center justify-evenly justify-items-center font-medium">
         <li>
-          <button
-            type="button"
+          <a
+            href="#home"
             className={
               router.pathname === '/'
                 ? 'text-white'
                 : 'text-[#666666] hover:text-gray-400'
             }
-            onClick={() => router.push('/')}
           >
             {t('home')}
-          </button>
+          </a>
         </li>
         <li>
-          <button
-            type="button"
+          <a
+            href="#services"
             className={
               router.pathname === '/'
                 ? 'text-white'
                 : 'text-[#666666] hover:text-gray-400'
             }
-            onClick={() => router.push('/')}
           >
             {t('services')}
-          </button>
+          </a>
         </li>
 
         <li>
-          <button
-            type="button"
+          <a
+            href="#contact"
             className={
               router.pathname === '/'
                 ? 'text-white'
                 : 'text-[#666666] hover:text-gray-400'
             }
-            onClick={() => router.push('/contact')}
           >
             {t('contact')}
-          </button>
+          </a>
         </li>
        
       </ul>
