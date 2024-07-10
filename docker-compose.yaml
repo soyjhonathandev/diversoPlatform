@@ -19,10 +19,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.frontend.dev
-    container_name: front-end-froz
+    container_name: front-end-diverso
     restart: on-failure
     ports:
-      - "3001:3001"
+      - "3004:3004"
     volumes:
       - ./front-end:/app
       - /app/node_modules

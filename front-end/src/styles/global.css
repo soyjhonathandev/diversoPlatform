@@ -211,10 +211,29 @@ body {
 
 .animate-marquee {
   display: flex;
-  animation: marquee 30s linear infinite;
-  width: calc(100% * 5);
+  animation: marquee 50s linear infinite;
+  width: 100%;
 }
 
 .animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+
+@keyframes marquee2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+  transform: translateX(-200%);
+  }
+}
+
+.animate-marquee2 {
+  display: flex;
+  animation: marquee2 50s linear infinite;
+}
+
+.animate-marquee2:hover {
   animation-play-state: paused;
 }

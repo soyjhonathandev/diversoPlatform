@@ -6,9 +6,15 @@ import { useTranslations } from 'next-intl';
 import React, { useState, useEffect, useRef } from 'react';
 //media
 import Logo from '@public/img/Logo.png';
-import Catalogue1 from '@public/img/catalogue1.png';
-import Catalogue2 from '@public/img/catalogue2.png';
-import Catalogue3 from '@public/img/catalogue3.png';
+import mockup1 from '@public/img/mockup1.png';
+import mockup2 from '@public/img/mockup2.png';
+import mockup3 from '@public/img/mockup3.png';
+import mockup4 from '@public/img/mockup4.png';
+import mockup5 from '@public/img/mockup5.png';
+import mockup6 from '@public/img/mockup6.png';
+import mockup7 from '@public/img/mockup7.png';
+import mockup8 from '@public/img/mockup8.png';
+import mockup9 from '@public/img/mockup9.png';
 
 import Service1 from '@public/img/service1.png';
 import Service2 from '@public/img/service2.png';
@@ -36,8 +42,12 @@ import { MoveRight } from 'lucide-react';
 
 const HomePage: React.FC = () => {
   const t = useTranslations('homePage');
-  const images = [customerLogo1, customerLogo2, customerLogo3,  customerLogo5, customerLogo6, customerLogo7, customerLogo8, customerLogo9, customerLogo4, customerLogo11, customerLogo12, customerLogo13, customerLogo14, customerLogo15, customerLogo16, customerLogo17, customerLogo18 ];
-
+  const whatsAppMessage = 'Hola, estoy interesad@ en una cotización.'
+  const whatsAppUrl = `https://api.whatsapp.com/send?phone=13476467471&text=${encodeURIComponent(
+    whatsAppMessage,
+  )}`;
+  const imagesCatalogue = [mockup3, mockup4, mockup5, mockup2, mockup6, mockup1, mockup7, mockup8, mockup9];
+  const imagesCustomers = [customerLogo1, customerLogo2, customerLogo3,  customerLogo5, customerLogo6, customerLogo7, customerLogo8, customerLogo9, customerLogo4, customerLogo11, customerLogo12, customerLogo13, customerLogo14, customerLogo15, customerLogo16, customerLogo17, customerLogo18 ];
   return (
     <>
       <Head>
@@ -53,9 +63,11 @@ const HomePage: React.FC = () => {
                 <h1 className="md:w-3/5 md:text-9xl text-7xl mb-8 mt-4 font-bold text-center text-white ">
                   {t('headline')}
                 </h1>
+                <a href={whatsAppUrl}>
                 <Button variant="outline" size="default">
                   {t('callToAction')}
-                </Button>
+                  </Button>
+                </a>
               </div>
             </section>
           </div>
@@ -133,16 +145,19 @@ const HomePage: React.FC = () => {
 
         {/*Catalogue auto slider*/}
         <section className="w-full md:h-[700px] flex justify-center  bg-background">
-          <div className="flex justify-between xl:flex-row flex-col w-full h-11/12 overflow-hidden ">
-            <div className="px-3 flex items-center">
-              <Image src={Catalogue1} alt="company icon" objectFit="cover" />
+          <div className="flex justify-between flex-row w-full sm:h-5/6 md:h-full  overflow-hidden  ">
+            <div className="items-center flex gap-5 animate-marquee2">
+              {/* <Image src={Catalogue1} alt="company icon" objectFit="cover" /> */}
+              {imagesCatalogue.map((image, index) => (
+                <Image
+                  key={index}
+                  src={image}
+                  alt={`Slide ${index}`}
+                  objectFit="cover" 
+                />
+              ))}
             </div>
-            <div className="px-3 flex items-center md:block hidden">
-              <Image src={Catalogue2} alt="company icon" objectFit="cover" />
-            </div>
-            <div className="px-3 flex items-center md:block hidden">
-              <Image src={Catalogue3} alt="company icon" objectFit="cover" />
-            </div>
+            
           </div>
         </section>
 
@@ -265,12 +280,12 @@ const HomePage: React.FC = () => {
             </h2>
             <div className="relative w-full overflow-hidden">
               <div className="flex gap-20 animate-marquee">
-                {images.concat(images).map((image, index) => (
+                {imagesCustomers.concat(imagesCustomers).map((image, index) => (
                   <Image
                     key={index}
                     src={image}
                     alt={`Slide ${index}`}
-                    className="w-38 h-16"
+                    className="w-32 h-14"
                   />
                 ))}
               </div>

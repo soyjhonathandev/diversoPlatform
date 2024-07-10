@@ -10,7 +10,7 @@ RUN yarn install
 
 COPY front-end/ ./
 
-EXPOSE 3001
+EXPOSE 3004
 
 CMD yarn run dev
 # CMD  yarn start:dev
