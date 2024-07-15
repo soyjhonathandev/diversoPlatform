@@ -145,7 +145,7 @@ const HomePage: React.FC = () => {
 
         {/*Catalogue auto slider*/}
         <section className="w-full md:h-[700px] flex justify-center  bg-background">
-          <div className="flex justify-between flex-row w-full sm:h-5/6 md:h-full  overflow-hidden  ">
+          <div className="flex justify-between flex-row w-full sm:h-5/6 md:h-full overflow-hidden  ">
             <div className="items-center flex gap-5 animate-marquee2">
               {/* <Image src={Catalogue1} alt="company icon" objectFit="cover" /> */}
               {imagesCatalogue.map((image, index) => (
@@ -182,9 +182,13 @@ const HomePage: React.FC = () => {
                 <span className="lg:text-5xl text-4xl md:text-start text-center font-medium text-black">{t('serviceSections.section1.subTitle')}</span>
               </div>
               <ul className='md:mt-5 text-xl font-secondaryFont font-medium flex flex-col gap-2'>
-                <li className='flex flex-row gap-3'><MoveRight /> {t('serviceSections.section1.list.item1')}</li>
-                <li className='flex flex-row gap-3'><MoveRight /> {t('serviceSections.section1.list.item2')}</li>
-                <li className='flex flex-row gap-3'><MoveRight /> {t('serviceSections.section1.list.item3')}</li>
+                <li className='flex flex-row gap-3'>
+                <div><MoveRight /></div>{t('serviceSections.section1.list.item1')}</li>
+                <li className='flex flex-row gap-3'>
+                <div><MoveRight /></div>{t('serviceSections.section1.list.item2')}</li>
+                <li className='flex flex-row gap-3 '>
+                      <div><MoveRight /></div>
+                  {t('serviceSections.section1.list.item3')}</li>
               </ul>
               <a
                 href="mailto:hi@diversocreativeagency.com?Subject=Hola, Estoy interesado en una cotizacion para el servicio de Branding!!"
@@ -208,10 +212,14 @@ const HomePage: React.FC = () => {
                 <span className="lg:text-2xl font-secondaryFont font-medium  text-2xl md:text-start text-center font-medium">{t('serviceSections.section2.subTitle')}</span>
               </div>
               <ul className=' text-xl  font-secondaryFont font-medium flex flex-col gap-2'>
-                <li className='flex flex-row gap-3'><MoveRight /> {t('serviceSections.section2.list.item1')}</li>
-                <li className='flex flex-row gap-3'><MoveRight /> {t('serviceSections.section2.list.item2')}</li>
-                <li className='flex flex-row gap-3'><MoveRight /> {t('serviceSections.section2.list.item3')}</li>
-                <li className='flex flex-row gap-3'><MoveRight /> {t('serviceSections.section2.list.item4')}</li>
+                <li className='flex flex-row gap-3'>
+                <div><MoveRight /></div> {t('serviceSections.section2.list.item1')}</li>
+                <li className='flex flex-row gap-3'>
+                <div><MoveRight /></div>{t('serviceSections.section2.list.item2')}</li>
+                <li className='flex flex-row gap-3'>
+                <div><MoveRight /></div> {t('serviceSections.section2.list.item3')}</li>
+                <li className='flex flex-row gap-3'> 
+                <div><MoveRight /></div>{t('serviceSections.section2.list.item4')}</li>
               </ul>
               <a
                 href="mailto:hi@diversocreativeagency.com?Subject=Hola, Estoy interesado en una cotizacion para el servicio de Diseño gráfico!!"
@@ -250,16 +258,23 @@ const HomePage: React.FC = () => {
             </div>
             <article className="xl:w-2/4 w-full md:mt-0 mt-10 flex justify-center flex-col md:items-start px-3">
               <div className=' mb-8 '>
-                <h2 className="lg:text-8xl text-7xl md:text-start text-justify mb-2  font-medium text-black">
+                <h2 className="lg:text-8xl text-7xl text-start text-justify mb-2 font-medium text-black">
                   {t('serviceSections.section3.title')}
                 </h2>
                 <span className="lg:text-5xl text-4xl md:text-start text-center font-medium text-black">{t('serviceSections.section3.subTitle')}</span>
               </div>
-              <ul className=' text-xl font-secondaryFont font-medium flex flex-col gap-2'>
-                <li className='flex flex-row gap-3'> <MoveRight /> {t('serviceSections.section3.list.item1')}</li>
-                <li className='flex flex-row gap-3'> <MoveRight /> {t('serviceSections.section3.list.item2')}</li>
-                <li className='flex flex-row gap-3'> <MoveRight /> {t('serviceSections.section3.list.item3')}</li>
-                <li className='flex flex-row gap-3'> <MoveRight /> {t('serviceSections.section3.list.item4')}</li>
+              <ul className='text-xl font-secondaryFont font-medium flex flex-col gap-2'>
+                <li className='flex flex-row gap-3'>
+                  <div><MoveRight /></div>
+                  {t('serviceSections.section3.list.item1')}</li>
+                <li className='flex flex-row gap-3'>
+                <div><MoveRight /></div> {t('serviceSections.section3.list.item2')}</li>
+                <li className='flex flex-row gap-3'>
+                <div><MoveRight /></div> {t('serviceSections.section3.list.item3')}</li>
+                <li className='flex flex-row gap-3'>
+                <div><MoveRight /></div> {t('serviceSections.section3.list.item4')}</li>
+                <li className='flex flex-row gap-3'>
+                <div><MoveRight /></div>{t('serviceSections.section3.list.item5')}</li>
               </ul>
               <a
                 href="mailto:hi@diversocreativeagency.com?Subject=Hola, Estoy interesado en una cotizacion para el servicio de Gestión de redes!!"

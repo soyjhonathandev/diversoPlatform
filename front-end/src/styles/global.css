@@ -211,7 +211,7 @@ body {
 
 .animate-marquee {
   display: flex;
-  animation: marquee 50s linear infinite;
+  animation: marquee 10s linear infinite;
   width: 100%;
 }
 
@@ -231,7 +231,7 @@ body {
 
 .animate-marquee2 {
   display: flex;
-  animation: marquee2 50s linear infinite;
+  animation: marquee2 20s linear infinite;
 }
 
 .animate-marquee2:hover {
